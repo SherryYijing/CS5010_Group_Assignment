@@ -47,7 +47,7 @@ public class ModelImplTest {
   @Test
   public void toStringTest() {
     this.model.createPortfolio("Yijing's Portfolio");
-    assertEquals("Portfolio name: Yijing's Portfolio  ", this.model.toString());
+    assertEquals("Portfolio name: Yijing's Portfolio.", this.model.toString());
   }
 
   /**

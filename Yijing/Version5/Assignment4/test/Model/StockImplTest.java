@@ -94,7 +94,8 @@ public class StockImplTest {
    */
   @Test
   public void getBuyPriceTest() {
-    assertEquals(134.77, this.stock.getBuyPrice(), 0.01);
+    Stock stock = new StockImpl("IBM", 150, "2022-10-27");
+    assertEquals(134.77, stock.getBuyPrice(), 0.01);
   }
 
   /**
@@ -102,7 +103,7 @@ public class StockImplTest {
    */
   @Test
   public void getCurrentPriceTest() {
-    assertEquals(138.51, this.stock.getCurrentPrice(), 0.01);
+    assertEquals(138.29, this.stock.getCurrentPrice(), 0.01);
   }
 
   /**

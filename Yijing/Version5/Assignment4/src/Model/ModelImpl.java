@@ -82,14 +82,9 @@ public class ModelImpl implements Model {
         try {
           String[] st;
           st = line.split(",");
-          double price;
           String buyDate;
           int quantity;
-          try {
-            price = Double.parseDouble(st[1]);
-          } catch (Exception e) {
-            throw new IllegalArgumentException("Buy date should be string!");
-          }
+
           try {
             buyDate = (st[2]).toString();
           } catch (Exception e) {
